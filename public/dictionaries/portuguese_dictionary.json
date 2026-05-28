@@ -1,0 +1,352 @@
+[
+  {
+    "id": "salvacao",
+    "word": "Salvação",
+    "lemma": "Salvação",
+    "definition": "Do latim salvatio. No contexto teológico e bíblico, refere-se ao livramento espiritual da condenação do pecado, da morte eterna e da separação de Deus. É realizada por meio da graça divina através da fé no sacrifício vicário de Jesus Cristo na cruz e Sua ressurreição. A salvação abrange três momentos: a justificação (passado), a santificação (presente) e a glorificação (futuro).",
+    "type": "dictionary"
+  },
+  {
+    "id": "fe",
+    "word": "Fé",
+    "lemma": "Fé",
+    "definition": "Do grego 'pistis' (πίστις) e hebraico 'emunah' (אֱמוּנָה). Confiança irrestrita, certeza e convicção firme na verdade revelada de Deus, nas Suas promessas e no Seu caráter imutável. Não é apenas mero assentimento intelectual, mas sim uma entrega prática e ativa da vontade humana à soberania divina.",
+    "type": "dictionary"
+  },
+  {
+    "id": "graca",
+    "word": "Graça",
+    "lemma": "Graça",
+    "definition": "Do grego 'charis' (χάρις) e hebraico 'chen' (חֵן). O imerecido favor divino concedido benevolentemente ao ser humano necessitado de salvação. Reflete a iniciativa amorosa de Deus em reconciliar consigo a humanidade decaída, provendo a redenção sem que o homem tenha qualquer mérito próprio ou capacidade de alcançá-la por obras.",
+    "type": "dictionary"
+  },
+  {
+    "id": "amor",
+    "word": "Amor",
+    "lemma": "Amor",
+    "definition": "Do grego 'agape' (ἀγάπη). O mais sublime atributo do caráter de Deus (pois 'Deus é amor') e o principal mandamento da ética bíblica. Caracteriza-se como um amor de escolha, incondicional, sacrificial, ativo e voluntário, que busca o bem-estar transcendente do outro independentemente de reciprocidade ou valor do destinatário.",
+    "type": "dictionary"
+  },
+  {
+    "id": "pecado",
+    "word": "Pecado",
+    "lemma": "Pecado",
+    "definition": "Do grego 'hamartia' (ἁμαρτία - errar o alvo) e hebraico 'chattah' (חַטָּאָה). Qualquer falta de conformidade de pensamento, palavra, desejo ou ação em relação à perfeita lei e santidade moral de Deus. O pecado produz a separação espiritual entre o homem e o Criador, trazendo ruína física, moral e condenação eterna.",
+    "type": "dictionary"
+  },
+  {
+    "id": "justificacao",
+    "word": "Justificação",
+    "lemma": "Justificação",
+    "definition": "Ato judicial e declaratório de Deus pelo qual Ele, com base nos méritos puríssimos e justiça imputada de Cristo, perdoa todos os pecados do homem arrependido e o declara totalmente justo diante do Seu tribunal. É um status legal definitivo concedido gratuitamente aos que exercem a fé salvadora.",
+    "type": "dictionary"
+  },
+  {
+    "id": "santificacao",
+    "word": "Santificação",
+    "lemma": "Santificação",
+    "definition": "O processo contínuo, dinâmico e progressivo operado pelo Espírito Santo no crente justificado, capacitando-o a separar-se do pecado e do sistema corrompido do mundo, sendo transformado moralmente conforme a imagem perfeita de Jesus Cristo. Exige a cooperação do crente por meio da obediência à Palavra de Deus.",
+    "type": "dictionary"
+  },
+  {
+    "id": "misericordia",
+    "word": "Misericórdia",
+    "lemma": "Misericórdia",
+    "definition": "Do latim miseri (miserável) + cor (coração). A compaixão activa de Deus que retém o juízo ou a punição perfeitamente merecidos pelo pecador. Enquanto a graça dá ao homem o que ele não merece (salvação), a misericórdia não lhe dá o castigo severo que ele de fato merece.",
+    "type": "dictionary"
+  },
+  {
+    "id": "alianca",
+    "word": "Aliança",
+    "lemma": "Aliança",
+    "definition": "Do hebraico 'berith' (בְּרִית) e grego 'diatheke' (διαθήκη). Pacto moral solene, soberano e pactual estabelecido por Deus com a humanidade ou com indivíduos específicos. Define as bases de relacionamento, promessas divinas de bênção, juramentos e obrigações espirituais selados com sangue (como na Antiga e na Nova Aliança em Cristo).",
+    "type": "dictionary"
+  },
+  {
+    "id": "arrependimento",
+    "word": "Arrependimento",
+    "lemma": "Arrependimento",
+    "definition": "Do grego 'metanoia' (μετάνοια). Mudança profunda de mente, atitude, afeições e direção de vida em relação ao pecado e a Deus. Envolve o reconhecimento sincero da culpa moral, tristeza genuína pelo pecado cometido e uma conversão ativa para buscar a justiça de Deus em obediência prática.",
+    "type": "dictionary"
+  },
+  {
+    "id": "regeneracao",
+    "word": "Regeneração",
+    "lemma": "Regeneração",
+    "definition": "O ato milagroso e soberano do Espírito Santo pelo qual Ele infunde uma nova vida espiritual na alma outrora morta espiritualmente in delitos e pecados. É o 'novo nascimento', a transição radical das trevas para a luz que capacita a pessoa a crer, amar a Deus e andar em novidade de vida.",
+    "type": "dictionary"
+  },
+  {
+    "id": "redencao",
+    "word": "Redenção",
+    "lemma": "Redenção",
+    "definition": "Do grego 'apolutrosis' (ἀπολύτρωσις). Libertação ou resgate de um escravo ou prisioneiro de suas dívidas sob o pagamento de um preço justo. Na teologia, é a libertação do homem do cativeiro do pecado, da lei e da morte, obtida pela dádiva da vida e derramamento do sangue perfeito de Jesus Cristo.",
+    "type": "dictionary"
+  },
+  {
+    "id": "reconciliacao",
+    "word": "Reconciliação",
+    "lemma": "Reconciliação",
+    "definition": "Do grego 'katallage' (καταλλαγή). Restabelecimento do relacionamento pacífico e harmonioso entre Deus e o homem decaído, pondo fim ao estado de inimizade moral anterior decorrente do pecado. Essa reconciliação foi plenamente intermediada, custeada e conquistada por Deus mediante a morte de Cristo na cruz.",
+    "type": "dictionary"
+  },
+  {
+    "id": "trindade",
+    "word": "Trindade",
+    "lemma": "Trindade",
+    "definition": "A doutrina fundamental da teologia cristã que descreve a comunhão de Deus. Afirma que há um só Deus verdadeiro e absoluto que subsiste eternamente em três Pessoas perfeitamente distintas, coeternas, co-iguais e consubstanciais: o Pai, o Filho e o Espírito Santo. Um único Ser divino em três subsistências.",
+    "type": "dictionary"
+  },
+  {
+    "id": "esperanca",
+    "word": "Esperança",
+    "lemma": "Esperança",
+    "definition": "Do grego 'elpis' (ἐλπίς). A certeza gozosa e convicta na concretização futura das promessas eternas de Deus baseada exclusivamente na fidelidade dEle. Não é um mero desejo otimista incerto, mas um firme âncora espiritual para a alma que sustenta o crente sob provações terrenas.",
+    "type": "dictionary"
+  },
+  {
+    "id": "igreja",
+    "word": "Igreja",
+    "lemma": "Igreja",
+    "definition": "Do grego 'ekklesia' (ἐκκλησία - assembleia de chamados para fora). A comunidade universal de todos os regenerados e crentes em Jesus Cristo ao longo da história, zelada sob Seu senhorio (corpo místico de Cristo). Num sentido local, é o ajuntamento geográfico de discípulos dedicados ao louvor, comunhão, mútuo ensino, prática dos sacramentos e pregação do Evangelho.",
+    "type": "dictionary"
+  },
+  {
+    "id": "oracao",
+    "word": "Oração",
+    "lemma": "Oração",
+    "definition": "O ato sagrado e íntimo de diálogo, adoração, confissão, petição, intercessão e agradecimento dirigido a Deus. É a expressão mais direta da fé viva e do relacionamento filial do crente com o Pai Celeste, saboreado pela mediação permanente de Jesus e intercessão do Espírito Santo.",
+    "type": "dictionary"
+  },
+  {
+    "id": "espirito",
+    "word": "Espírito",
+    "lemma": "Espírito",
+    "definition": "Do hebraico 'ruach' (רוּחַ) e grego 'pneuma' (πνεῦμα). Refere-se à substância imaterial humana ou celestial. Num contexto divino, refere-se ao Espírito Santo, a terceira Pessoa da Trindade que atua ativamente no mundo convencendo do pecado, operando o novo nascimento, habitando, guiando e consolando a vida do crente.",
+    "type": "dictionary"
+  },
+  {
+    "id": "evangelho",
+    "word": "Evangelho",
+    "lemma": "Evangelho",
+    "definition": "Do grego 'euaggelion' (εὐαγγέλιον - boas novas). A mensagem jubilosa da salvação eterna e reconciliação dos homens com Deus através da encarnação, vida perfeita, crucificação, morte vicária e ressurreição triunfante de Jesus Cristo.",
+    "type": "dictionary"
+  },
+  {
+    "id": "discipulado",
+    "word": "Discipulado",
+    "lemma": "Discipulado",
+    "definition": "O processo espiritual, instrucional e de santificação pelo qual um seguidor fiel de Jesus Cristo ajuda outros a crescerem no conhecimento das Escrituras, em amor, em conduta moral e em testemunho ativo de acordo com a grande comissão bíblica de Cristo nos evangelhos.",
+    "type": "dictionary"
+  },
+  {
+    "id": "batismo",
+    "word": "Batismo",
+    "lemma": "Batismo",
+    "definition": "Sacramento, rito ou ordenança pública instituída diretamente por Jesus Cristo que expressa visivelmente a fé íntima do pecador em sua identificação perfeita com a morte, sepultamento e ressurreição santificadora do Messias.",
+    "type": "dictionary"
+  },
+  {
+    "id": "parabola",
+    "word": "Parábola",
+    "lemma": "Parábola",
+    "definition": "Uma narrativa histórica, fictícia ou terrena curta e extremamente vívida voltada para ilustrar verdades eternas de cunho ético ou teológico sobre o Reino de Deus. O método pedagógico favorito de Cristo em Seu ministério.",
+    "type": "dictionary"
+  },
+  {
+    "id": "profecia",
+    "word": "Profecia",
+    "lemma": "Profecia",
+    "definition": "Mensagem ou declaração moral inspirada vocal ou textualmente pelo Espírito Santo que edifica, consola, exorta ou prediz decisões futuras divinas sobre indivíduos e reinos morais.",
+    "type": "dictionary"
+  },
+  {
+    "id": "milagre",
+    "word": "Milagre",
+    "lemma": "Milagre",
+    "definition": "Evento extraordinário, sobrenatural e historicamente perceptível operado diretamente pela vontade soberana de Deus sobre os elementos físicos para validar Sua divindade e transmitir Seus planos gloriosos.",
+    "type": "dictionary"
+  },
+  {
+    "id": "apostolo",
+    "word": "Apóstolo",
+    "lemma": "Apóstolo",
+    "definition": "Do grego 'apostolos' (mensageiro oficial enviado em viagem de representação). Refere-se aos doze apóstolos escolhidos diretamente por Cristo e ressurretos designados para fundamentar teologicamente o Evangelho na Igreja Primitiva.",
+    "type": "dictionary"
+  },
+  {
+    "id": "sacerdote",
+    "word": "Sacerdote",
+    "lemma": "Sacerdote",
+    "definition": "Do hebraico 'kohen' (כֹּהֵν). Aquele designado por Deus para interceder ministerialmente entre as famílias humanas e Sua majestade celestiais, prefigurando ritualmente o sacerdócio sacrificial e glorioso de Cristo Jesus em favor da raça humana.",
+    "type": "dictionary"
+  },
+  {
+    "id": "sabedoria",
+    "word": "Sabedoria",
+    "lemma": "Sabedoria",
+    "definition": "O temor prático e moral ao Senhor, a habilidade de estruturar as decisões intelectuais e diárias da existência humana em concordância com os desígnios perfeitos eternos do Criador.",
+    "type": "dictionary"
+  },
+  {
+    "id": "justica",
+    "word": "Justiça",
+    "lemma": "Justiça",
+    "definition": "Retidão e conformidade intrínseca do caráter de Deus aos padrões morais absolutos por Ele estabelecidos. Também representa a imputação jurídica dos méritos de Cristo ao crente ou o dever relacional de retidão com o próximo.",
+    "type": "dictionary"
+  },
+  {
+    "id": "paz",
+    "word": "Paz",
+    "lemma": "Paz",
+    "definition": "Shalom. Quietude de espírito e bem-estar integral restaurado entre o Criador e a humanidade justificada em Cristo, expressando repouso espiritual imune às perturbações e tribulações dEste mundo decadente.",
+    "type": "dictionary"
+  },
+  {
+    "id": "comunhao",
+    "word": "Comunhão",
+    "lemma": "Comunhão",
+    "definition": "Do grego 'koinonia'. Compartilhamento recíproco e vivência fraterna enraizada na presença do Espírito Santo na Igreja de Cristo, onde cada discípulo serve os irmãos com caridade moral, suporte e generosidade material.",
+    "type": "dictionary"
+  },
+  {
+    "id": "revelacao",
+    "word": "Revelação",
+    "lemma": "Revelação",
+    "definition": "Ato da benevolência de Deus no qual Ele manifesta inteligivelmente à humanidade conhecimentos outrora ocultados aos olhos seculares, ocorrendo na criação, nas Sagradas Escrituras e corporificada perfeitamente em Jesus.",
+    "type": "dictionary"
+  },
+  {
+    "id": "expiacao",
+    "word": "Expiação",
+    "lemma": "Expiação",
+    "definition": "Cobertura ou purificação vicária dos pecados e da culpa moral realizada pelo pagamento com sangue e doação sacrificial de vida, culminando perfeitamente e plenamente no sacrifício vicário de Cristo por nós na cruz do Calvário.",
+    "type": "dictionary"
+  },
+  {
+    "id": "providencia",
+    "word": "Providência",
+    "lemma": "Providência",
+    "definition": "Ato do cuidado soberano de Deus pelo qual Ele governa e preserva de forma ativa as ações terrenas físico-históricas de Sua feitura com amor, justiça e discernimento irrepreensíveis para que redundem em Seus eternos propósitos sagrados.",
+    "type": "dictionary"
+  },
+  {
+    "id": "eternidade",
+    "word": "Eternidade",
+    "lemma": "Eternidade",
+    "definition": "Inexistência cósmica de limites ou transição temporal. Atributo inalienável do Pai e lar espiritual prometido celestial aos fiéis comissionados à vida de comunhão infinita amorosa santa de Deus.",
+    "type": "dictionary"
+  },
+  {
+    "id": "biblia",
+    "word": "Bíblia",
+    "lemma": "Bíblia",
+    "definition": "A inspirada Palavra escrita de Deus composta por 66 volumes do cânon teológico, revelados providencialmente por escribas guiados pelo Espírito de Deus com finalidade redentora para a raça caída.",
+    "type": "dictionary"
+  },
+  {
+    "id": "juizo",
+    "word": "Juízo",
+    "lemma": "Juízo",
+    "definition": "Veredito santo, retilíneo e legal de Deus instaurado na história moral ou proclamado solenemente no encerramento das eras pós-morte contra o mal e conforme a perfeita verdade de Sua essência.",
+    "type": "dictionary"
+  },
+  {
+    "id": "gloria",
+    "word": "Glória",
+    "lemma": "Glória",
+    "definition": "A indescritível e resplendente exaltação do caráter moral de Deus, Sua radiância sobrenatural transcendente e majestade suprema diante das quais toda a criação santa reconhece e louva reverentemente.",
+    "type": "dictionary"
+  },
+  {
+    "id": "santos",
+    "word": "Santos",
+    "lemma": "Santos",
+    "definition": "A designação dos discípulos chamados para a justiça divina, os quais foram regenerados na misericórdia e vivem cotidianamente apartados das imoralidades do século presente para consagração ao Pai.",
+    "type": "dictionary"
+  },
+  {
+    "id": "verbo",
+    "word": "Verbo",
+    "lemma": "Verbo",
+    "definition": "Do grego 'Logos'. A hipóstase, pessoa do Verbo eterno, o Filho unigênito que se fez homem verdadeiro, expressando eternamente em carne e espírito os pensamentos de amor e graça salvadora manifestados pelo Pai.",
+    "type": "dictionary"
+  },
+  {
+    "id": "sacrificio",
+    "word": "Sacrifício",
+    "lemma": "Sacrifício",
+    "definition": "Ato intencional santo de doação e renúncia vital, caracterizado na antiga aliança por ofertas com sangue expiatório e consagrado ultimamente pela obediência ativa total perfeita provida por Jesus na cruz.",
+    "type": "dictionary"
+  },
+  {
+    "id": "redentor",
+    "word": "Redentor",
+    "lemma": "Redentor",
+    "definition": "Aquele que realiza legalmente redimir a pessoa amada do endividamento moral, do aprisionamento ou do exílio eterno de suas capacidades; em plenitude, título outorgado a Jesus.",
+    "type": "dictionary"
+  },
+  {
+    "id": "mediador",
+    "word": "Mediador",
+    "lemma": "Mediador",
+    "definition": "O advogado e facilitador reconciliatório de excelência mística devidamente qualificado com divindade e humanidade íntegras para restabelecer a concórdia afetiva de pacto entre o Divino e a raça caída.",
+    "type": "dictionary"
+  },
+  {
+    "id": "consolador",
+    "word": "Consolador",
+    "lemma": "Consolador",
+    "definition": "Do grego 'Parakletos'. Aquele invocado para auxiliar nas intempéries, aconselhar no discernimento reto e prover refrigério contínuo à Igreja; a pessoa divina do Espírito Santo habitador.",
+    "type": "dictionary"
+  },
+  {
+    "id": "messias",
+    "word": "Messias",
+    "lemma": "Messias",
+    "definition": "Do hebraico 'Mashiach' (O Ungido correspondente ao termo grego 'Christos'). O divino Ungido divinamente aguardado, profetizado historicamente para realizar a salvação, instaurar e liderar eternamente o Reino do Pai.",
+    "type": "dictionary"
+  },
+  {
+    "id": "teologia",
+    "word": "Teologia",
+    "lemma": "Teologia",
+    "definition": "O estudo reverente, intelectual e estruturado fundado na autoveladora Palavra de Deus acerca do ser celestial divino, Suas leis morais, emanações físicas espirituais e plano soteriológico pactual histórico.",
+    "type": "dictionary"
+  },
+  {
+    "id": "soteriologia",
+    "word": "Soteriologia",
+    "lemma": "Soteriologia",
+    "definition": "Subdivisão teológica dogmática centrada em investigar e descrever os parâmetros bíblicos referentes ao processo e etapas da libertação salutar moral de salvação promovidos por intermédio das obras messiânicas.",
+    "type": "dictionary"
+  },
+  {
+    "id": "cristologia",
+    "word": "Cristologia",
+    "lemma": "Cristologia",
+    "definition": "O escrutínio e investigação teológica focados nAquele que é o Cristo de Deus, abrangendo o estudo místico de Suas duas naturezas (Perfeitamente Divino, Perfeitamente Humano), vida santa, morte e ofícios permanentes.",
+    "type": "dictionary"
+  },
+  {
+    "id": "pneumatologia",
+    "word": "Pneumatologia",
+    "lemma": "Pneumatologia",
+    "definition": "O exame e conceituação de doutrina teológica que se orienta a esclarecer e celebrar a natureza divina pessoal da terceira pessoa trinitária santa, o Espírito Santo, e Suas ações santificadoras e dons na assembleia dos homens.",
+    "type": "dictionary"
+  },
+  {
+    "id": "eclesiologia",
+    "word": "Eclesiologia",
+    "lemma": "Eclesiologia",
+    "definition": "O ramo teológico responsável pelo discernimento das atribuições organizacionais, ordenanças sacras ordinárias, essência espiritual e destinações proféticas universais e históricas locais conferidas à Igreja edificada por Jesus.",
+    "type": "dictionary"
+  },
+  {
+    "id": "escatologia",
+    "word": "Escatologia",
+    "lemma": "Escatologia",
+    "definition": "A disciplina teológica que contempla e investiga os eventos derradeiros profetizados nos livros canônicos sobre o desfecho providencial da cronologia humana, retorno do Messias, juízo final e consolidação do novo céu e nova terra.",
+    "type": "dictionary"
+  }
+]

@@ -1,0 +1,98 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "Stores user settings and preferences.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "preferredVersion": { "type": "string", "description": "e.g., 'KJV', 'NVI', 'Almeida'" },
+        "theme": { "type": "string", "enum": ["light", "dark", "sepia", "paper"] },
+        "readerSettings": {
+          "type": "object",
+          "properties": {
+            "theme": { "type": "string", "enum": ["light", "dark", "sepia", "paper"] },
+            "font": { "type": "string", "enum": ["serif", "sans", "mono", "slab"] },
+            "fontSize": { "type": "string", "enum": ["base", "lg", "xl", "2xl", "3xl", "4xl"] }
+          }
+        },
+        "reminderTime": { "type": "string", "description": "ISO time string for daily reminders" },
+        "lastReadReference": { "type": "string", "description": "e.g., 'Gen.1.1'" }
+      },
+      "required": ["userId", "email"]
+    },
+    "ReadingProgress": {
+      "title": "Reading Progress",
+      "description": "Tracks which verses have been read.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "verseId": { "type": "string", "description": "BookCode.Chapter.Verse" },
+        "readAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "verseId", "readAt"]
+    },
+    "Annotation": {
+      "title": "Verse Annotation",
+      "description": "User notes on specific verses.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "verseId": { "type": "string" },
+        "content": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "verseId", "content"]
+    },
+    "Highlight": {
+      "title": "Text Highlight",
+      "description": "User highlights of specific text parts.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "verseId": { "type": "string" },
+        "text": { "type": "string" },
+        "color": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "verseId", "text", "color"]
+    },
+    "ReadingPlanProgress": {
+      "title": "Reading Plan Progress",
+      "description": "Tracks progress on a specific reading plan.",
+      "type": "object",
+      "properties": {
+        "planId": { "type": "string" },
+        "startDate": { "type": "string", "format": "date-time" },
+        "completedDays": { "type": "array", "items": { "type": "integer" } },
+        "lastUpdate": { "type": "string", "format": "date-time" }
+      },
+      "required": ["planId", "startDate", "completedDays"]
+    }
+  },
+  "firestore": {
+    "users/{userId}": {
+      "schema": "UserProfile",
+      "description": "Single user record"
+    },
+    "users/{userId}/readingProgress/{progressId}": {
+      "schema": "ReadingProgress",
+      "description": "Collection of read verses for a user"
+    },
+    "users/{userId}/annotations/{annotationId}": {
+      "schema": "Annotation",
+      "description": "User notes per verse"
+    },
+    "users/{userId}/highlights/{highlightId}": {
+      "schema": "Highlight",
+      "description": "User text highlights"
+    },
+    "users/{userId}/readingPlans/{planId}": {
+      "schema": "ReadingPlanProgress",
+      "description": "User progress on a reading plan"
+    }
+  }
+}

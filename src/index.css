@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;700&family=JetBrains+Mono:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-slab: "Roboto Slab", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-bible: "Libre Baskerville", serif;
+  --font-display: "Playfair Display", serif;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-transparent: transparent;
+
+  --color-stone-50: #fafaf9;
+  --color-stone-100: #f5f5f4;
+  --color-stone-200: #e7e5e4;
+  --color-stone-300: #d6d3d1;
+  --color-stone-400: #a8a29e;
+  --color-stone-500: #78716c;
+  --color-stone-600: #57534e;
+  --color-stone-700: #44403c;
+  --color-stone-800: #292524;
+  --color-stone-900: #1c1917;
+  --color-stone-950: #0c0a09;
+
+  --color-zinc-50: #fafafa;
+  --color-zinc-100: #f4f4f5;
+  --color-zinc-200: #e4e4e7;
+  --color-zinc-300: #d4d4d8;
+  --color-zinc-400: #a1a1aa;
+  --color-zinc-500: #71717a;
+  --color-zinc-600: #52525b;
+  --color-zinc-700: #3f3f46;
+  --color-zinc-800: #27272a;
+  --color-zinc-900: #18181b;
+  --color-zinc-950: #09090b;
+
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-600: #475569;
+
+  --color-amber-50: #fffbeb;
+  --color-amber-100: #fef3c7;
+  --color-amber-600: #d97706;
+
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-600: #2563eb;
+
+  --color-pink-50: #fdf2f8;
+  --color-pink-100: #fce7f3;
+  --color-pink-600: #db2777;
+
+  --color-green-50: #f0fdf4;
+  --color-green-100: #dcfce7;
+  --color-green-600: #16a34a;
+}
+
+@layer base {
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  body {
+    @apply font-sans antialiased bg-[#F5F5F0] text-stone-900;
+  }
+}
+
+.markdown-body {
+  @apply font-serif leading-relaxed text-stone-800;
+}
+
+.markdown-body h1 { @apply text-3xl font-bold mb-4 mt-8; }
+.markdown-body h2 { @apply text-2xl font-bold mb-3 mt-6; }
+.markdown-body p { @apply mb-4; }
+.markdown-body ul { @apply list-disc pl-6 mb-4; }
+
+.parchment-texture {
+  background: linear-gradient(
+    to bottom,
+    #f8f1e3,
+    #f1e4cf
+  );
+}
+
+.bible-verse-number {
+  color: #2D5A27;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.bible-original-word {
+  color: #64748b;
+  font-size: 0.85em;
+  margin-left: 0.25rem;
+  font-family: var(--font-serif);
+  font-style: italic;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.bible-original-word:hover {
+  color: #1e293b;
+  text-decoration: underline;
+}

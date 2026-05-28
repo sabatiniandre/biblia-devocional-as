@@ -1,0 +1,6 @@
+{
+  "name": "Bíblia devocional AS",
+  "description": "App de leitura bíblica com plano anual, anotações, dicionários Strong e sincronização na nuvem.",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,136 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 0. Global Safety Net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helpers
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    // 1. User Profiles
+    match /users/{userId} {
+      allow get: if isOwner(userId);
+      allow create: if isOwner(userId) && isValidUser(incoming());
+      allow update: if isOwner(userId) && isValidUser(incoming())
+        && (incoming().diff(existing()).affectedKeys().hasAny(['preferredVersion', 'theme', 'reminderTime', 'lastReadReference', 'displayName', 'readerSettings', 'updatedAt']));
+      allow delete: if isOwner(userId);
+      
+      function isValidUser(data) {
+        return data.userId == request.auth.uid
+          && data.email is string && data.email.size() <= 256
+          && (!('displayName' in data) || (data.displayName is string && data.displayName.size() <= 100))
+          && (!('preferredVersion' in data) || (data.preferredVersion is string && data.preferredVersion.size() <= 20))
+          && (!('theme' in data) || (data.theme in ['light', 'dark', 'sepia', 'paper']))
+          && (!('reminderTime' in data) || (data.reminderTime is string))
+          && (!('lastReadReference' in data) || (data.lastReadReference is string))
+          && (!('readerSettings' in data) || (
+              data.readerSettings.theme in ['light', 'dark', 'sepia', 'paper'] &&
+              data.readerSettings.font in ['serif', 'sans', 'mono', 'slab'] &&
+              data.readerSettings.fontSize in ['base', 'lg', 'xl', '2xl', '3xl', '4xl']
+          ))
+          && (!('createdAt' in data) || (data.createdAt is timestamp))
+          && (!('updatedAt' in data) || (data.updatedAt is timestamp));
+      }
+      
+      // 2. Reading Progress
+      match /readingProgress/{progressId} {
+        allow get, list: if isOwner(userId);
+        allow create, update: if isOwner(userId) && isValidId(progressId) && isValidProgress(incoming());
+        allow delete: if isOwner(userId);
+
+        function isValidProgress(data) {
+          return data.userId == request.auth.uid
+            && data.verseId is string && data.verseId.size() <= 64
+            && data.readAt is timestamp;
+        }
+      }
+
+      // 3. Annotations
+      match /annotations/{annotationId} {
+        allow get, list: if isOwner(userId);
+        allow create, update: if isOwner(userId) && isValidId(annotationId) && isValidAnnotation(incoming());
+        allow delete: if isOwner(userId);
+
+        function isValidAnnotation(data) {
+          return data.userId == request.auth.uid
+            && data.verseId is string && data.verseId.size() <= 64
+            && data.content is string && data.content.size() <= 10000
+            && data.updatedAt is timestamp;
+        }
+      }
+
+      // 4. Highlights
+      match /highlights/{highlightId} {
+        allow get, list: if isOwner(userId);
+        allow create, update: if isOwner(userId) && isValidId(highlightId) && isValidHighlight(incoming());
+        allow delete: if isOwner(userId);
+
+        function isValidHighlight(data) {
+          return data.userId == request.auth.uid
+            && data.verseId is string && data.verseId.size() <= 64
+            && data.text is string && data.text.size() <= 1000
+            && data.color is string && data.color.size() <= 32
+            && data.createdAt is timestamp;
+        }
+      }
+
+      // 5. Reading Plans
+      match /readingPlans/{planId} {
+        allow get, list: if isOwner(userId);
+        allow create, update: if isOwner(userId) && isValidId(planId) && isValidPlan(incoming());
+        allow delete: if isOwner(userId);
+
+        function isValidPlan(data) {
+          return data.planId is string && data.planId.size() <= 64
+            && data.startDate is timestamp
+            && data.completedDays is list
+            && (data.completedDays.size() == 0 || data.completedDays[0] is int);
+        }
+      }
+
+      // 6. Favorites
+      match /favorites/{favId} {
+        allow get, list: if isOwner(userId);
+        allow create, update: if isOwner(userId) && isValidId(favId);
+        allow delete: if isOwner(userId);
+      }
+    }
+
+    // 6. Analytics (Global)
+    match /analytics/installs {
+      match /records/{recordId} {
+        allow create: if true; // Permite registrar instalação mesmo sem login
+      }
+    }
+
+    // 7. Server Cache (Internal)
+    // These are managed by the absolute power of the Admin SDK in the backend.
+    // We explicitly deny client access for security.
+    match /cache_interlinear/{id} {
+      allow read, write: if false;
+    }
+    match /cache_strong/{id} {
+      allow read, write: if false;
+    }
+  }
+}
